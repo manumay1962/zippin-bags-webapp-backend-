@@ -13,4 +13,4 @@ const productSchema = mongoose.Schema({
   textcolor: String,
 });
 
-model.exports = mongoose.model("product", productSchema);
+module.exports = mongoose.model("product", productSchema);

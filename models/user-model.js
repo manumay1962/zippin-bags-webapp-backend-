@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongoose://127.0.0.1:27017/zippin");
+
 
 const userSchema = mongoose.Schema({
   fullname: String,
@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
     type: Array,
     default: [],
   },
-  isadmin: Boolean,
+ 
   orders: {
     type: Array,
     default: [],
@@ -19,4 +19,4 @@ const userSchema = mongoose.Schema({
   picture: String,
 });
 
-model.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("user", userSchema);
